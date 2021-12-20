@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding :0px ;
+  margin:0px ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: rgb(65, 64, 64) ;
+  color : white ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li{
+  font-size: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.i-block{
+  display: inline-block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  width:1200px ;
+  height : 500px ;
+  margin:80px auto ;
+  position: relative;
+}
+.timeline-title{
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.timeline-title-left{
+  background: rgb(22, 22, 22) ;
+  padding:10px 20px;
+  border-radius: 20px;
+  border:2px solid blue ;
+  position: relative;
+}
+.timeline-title-left::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:50% ;
+  left:0px ;
+  transform: translateY(-50%);
+  width : -64px; 
+  z-index: 98;
+}
+.timeline-title-right{
+  background:  rgb(22, 22, 22)  ;
+  padding:10px 20px;
+  border-radius: 20px;
+  border:2px solid greenyellow ;
+}
+.timeline-one-top{
+  margin-bottom: 30px;
+}
+.timeline-one-top-content_two{
+  transform: translateX(-40px);
+}
+.timeline-one-top-content_three{
+  transform: translateX(-100px);
+}
+.timeline-one-top-content_four{
+  transform: translateX(-60px);
+}
+.timeline-one-top-content_five{
+  transform: translateX(-30px);
+}
+/* .timeline-one-top-content_two{
+  transform: translateX(-40px);
+}
+.timeline-one-top-content_two{
+  transform: translateX(-40px);
+} */
+.timeline-one-bottom{
+  margin-top:30px ;
+}
+.timeline{
+  position: relative;
+  left:0px ;
+  right:0px ;
+  background : gold ;
+  height: 1px;
+}
+.timeline-one{
+   flex-basis: 10%;
+   padding:2px 12px ;
+   border-radius: 10px;
+   z-index: 99;
+   border:1px solid gold ;
+   font-size: 20px;
+   background: gold ;
+   color:black ;
+   font-weight: 500;
+}
+.timeline-one::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:-30px ;
+  left:17px ;
+  height: 60px;
+}
+.timeline-day-one{
+  flex-basis: 20%;
+}
+.timeline-day-one__content{
+   padding:2px 12px ;
+   border-radius: 10px;
+   z-index: 99;
+   border:1px solid gold ;
+   font-size: 12px;
+  background: rgb(43, 43, 43) ;
+   color:gold ;
+   font-weight: 500;
+   z-index: 99;
+   display: inline-block;
+   margin-left: 20px;
+   position: relative;
+}
+.timeline-day-one__content::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:-50px ;
+  left:16px ;
+  height: 120px;
+  z-index: 98;
+}
+.timeline-day-two{
+  flex-basis: 28%;
+}
+.timeline-day-two__content{
+   padding:2px 12px ;
+   border-radius: 10px;
+   z-index: 99;
+   border:1px solid gold ;
+   font-size: 12px;
+    background: rgb(43, 43, 43) ;
+   color:gold ;
+   font-weight: 500;
+   display: inline-block;
+   position: relative;
+}
+.timeline-day-two__content::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:-50px ;
+  left:16px ;
+  height: 120px;
+  z-index: 98;
+}
+.timeline-day-three{
+  flex-basis: 27%;
+}
+.timeline-day-three__content{
+   padding:2px 12px ;
+   border-radius: 10px;
+   z-index: 99;
+   border:1px solid gold ;
+   font-size: 12px;
+  background: rgb(43, 43, 43) ;
+   color:gold ;
+   font-weight: 500;
+   display: inline-block;
+   position: relative;
+}
+.timeline-day-three__content::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:-50px ;
+  left:16px ;
+  height: 120px;
+  z-index: 98;
+}
+.timeline-day-four{
+  flex-basis: 15%;
+}
+.timeline-day-four__content{
+   padding:2px 12px ;
+   border-radius: 10px;
+   z-index: 99;
+   border:1px solid gold ;
+   font-size: 12px;
+   background: rgb(43, 43, 43) ;
+   color:gold ;
+   font-weight: 500;
+   display: inline-block;
+   position: relative;
+}
+.timeline-day-four__content::after{
+  content : "" ;
+  border:1px dotted gold ;
+  position: absolute;
+  top:-50px ;
+  left:16px ;
+  height: 120px;
+  z-index: 98;
+}
+.rec{
+  width:8px ;
+  height:8px ;
+  z-index : 1000 ;
+  margin-right: 5px;
+  transform: rotate(45deg);
+  margin-right : 5px;
+}
+.rec-black{
+  background: black;
+}
+.rec-gold{
+  background: gold ;
 }
